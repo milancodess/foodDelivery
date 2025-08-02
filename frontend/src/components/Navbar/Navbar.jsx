@@ -1,7 +1,27 @@
 import React from "react";
 import "./Navbar.css";
+import { assets } from "../../assets/assets";
+
 const Navbar = () => {
-  return <div></div>;
+  return (
+    <div className="navbar">
+      <img src={assets.logo} alt="Logo" />
+      <ul className="navbar-menu">
+        <li>Home</li>
+        <li>Menu</li>
+        <li>Mobile App</li>
+        <li>Contact Us</li>
+      </ul>
+      <div className="navbar-right">
+        <img src={assets.search_icon} alt="Seearch icon" />
+        <div className="navbar-search-icon">
+          <img src={assets.basket_icon} alt="" />
+          <div className="dot"></div>
+        </div>
+        <button>Sign In</button>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;
